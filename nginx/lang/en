@@ -41,3 +41,10 @@ start_err=Failed to start nginx
 test_err=Couldn't test nginx configuration
 
 msg_reload=Notice: Changes may not apply until NginX is reloaded. <a href="reload.cgi?redir=/nginx/">Apply Changes</a>
+
+tab_global=Global Configuration
+tab_existing=Existing Virtual Hosts
+tab_create=Create Virtual Host
+
+create_server_name=Server Name
+create_config=Config

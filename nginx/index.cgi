@@ -34,7 +34,11 @@ $config{'messages'} = '';
 save_module_config();
 &ui_print_header(undef, $text{'index_title'}, "", undef, 1, 1);
 
-@tabs = (['global', 'Global Configuration'], ['existing', 'Existing Virtual Hosts'], ['create', 'Create Virtual Host']);
+@tabs = (
+  ['global', $text{'tab_global'}],
+  ['existing', $text{'tab_existing'}],
+  ['create', $text{'tab_create'}]
+);
 
 print ui_tabs_start(\@tabs, 'mode', 'existing');
 
@@ -86,11 +90,11 @@ print ui_tabs_start_tab('mode', 'create');
   print &ui_form_start("create_server.cgi", "form-data");
 
     print &ui_table_start($text{'index_create'}, undef, 2);
-    print &ui_table_row("Server Name",
-      &ui_textbox("newserver", undef, 40));
+print &ui_table_row($text{'create_server_name'},
+  &ui_textbox("newserver", undef, 40));
 
-    print &ui_table_row("Config",
-      &ui_textarea("directives", undef, 25, 80, undef, undef,"style='width:100%'"));
+print &ui_table_row($text{'create_config'},
+  &ui_textarea("directives", undef, 25, 80, undef, undef, "style='width:100%'"));
 
     print &ui_table_row("",
       &ui_submit($text{'save'}));

@@ -1,0 +1,50 @@
+index_title=Nginx 網頁伺服器
+index_version=Nginx 版本 $1
+index_defserv=預設主機
+
+index_select=選擇
+index_status=狀態
+index_name=伺服器名稱
+index_addr=地址
+index_port=連接埠
+index_root=文件根目錄
+index_url=網址
+index_view=檢視
+
+opt_select=選擇動作...
+opt_enable=啟用
+opt_disable=停用
+opt_delete=刪除
+btn_submit=更新伺服器
+
+status_enabled=已啟用
+status_disabled=已停用
+
+gl_edit=編輯 nginx.conf
+gl_proxy=編輯 proxy.conf
+gl_details=檢視 nginx 詳情
+
+manual_title=編輯設定檔
+manual_header=請使用下方文字框手動編輯 $1 的 nginx 設定檔。
+
+nginx_apply=套用變更
+nginx_stop=停止 nginx
+nginx_start=啟動 nginx
+
+#stop_nginx=nginx 已手動停止
+stop_epid=無法開啟 PID 檔案
+stop_esig=無法送出 SIGTERM 訊號給程序 $1
+
+#start_nginx=nginx 已手動啟動
+start_err=啟動 nginx 失敗
+
+test_err=無法測試 nginx 設定檔
+
+msg_reload=注意：變更可能需要重新載入 Nginx 才會生效。<a href="reload.cgi?redir=/nginx/">套用變更</a>
+
+tab_global=全域設定
+tab_existing=已存在的虛擬主機
+tab_create=新增虛擬主機
+
+create_server_name=伺服器名稱
+create_config=設定內容
